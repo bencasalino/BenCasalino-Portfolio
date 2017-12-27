@@ -104,6 +104,9 @@ nav {
 
 /* end header styles */
 
+
+/* under hero image styles  */
+
 .fold {
   height: 30vh;
   /* padding-top: 2rem; */
@@ -157,7 +160,7 @@ h4 {
   display: inline-block;
 }
 
-/* end above the fold  */
+/* end hero image styles */
 
 .header-exp {
   padding-top: 1rem;
@@ -169,11 +172,7 @@ h4 {
   font-size: 2rem;
 }
 
-/* start exp */
-
-
-
-/*effect-underline*/
+/*effect-underline fallbacks */
 
 a {
   font-size: 1rem;
