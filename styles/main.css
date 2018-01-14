@@ -122,6 +122,10 @@ nav {
   padding: 3rem 0rem 0rem 1rem;
 }
 
+.hw {
+  font-size: 3.5rem;
+}
+
 h2 {
   padding-top: .4rem;
   font-size: 1rem;
@@ -131,8 +135,10 @@ h2 {
 
 .bio {
   padding: 3rem 2rem 0rem 0rem;
-  display: inline-block;
+  /* display: inline-block; */
   font-family: 'Lato', sans-serif;
+  flex-direction: column;
+  display: flex;
 }
 
 h3 {
@@ -144,10 +150,11 @@ h3 {
 }
 
 h4 {
-  padding-top: .4rem;
+  padding-top: .1rem;
+  padding-right: 1rem;
   font-size: 1.2rem;
   font-family: 'Lato', sans-serif;
-  line-height: 1.5rem;
+  line-height: 2rem;
   display: inline-block;
 }
 
@@ -158,7 +165,9 @@ h4 {
 
 .sm-icons {
   display: inline-block;
+  padding: .2rem;
 }
+
 
 /* end hero image styles */
 
@@ -170,6 +179,7 @@ h4 {
   align-content: center;
   display: flex;
   font-size: 2rem;
+  
 }
 
 /*effect-underline fallbacks */
@@ -228,3 +238,11 @@ a:hover:after, a:focus:after {
   transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s;
 }
 /* end all hover fx styles */
+
+
+.rowcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  line-height: 2rem;
+}
