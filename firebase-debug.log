@@ -1,0 +1,104 @@
+[debug] [2018-01-14T20:18:20.188Z] ----------------------------------------------------------------------
+[debug] [2018-01-14T20:18:20.190Z] Command:       /usr/local/Cellar/node/8.7.0/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-01-14T20:18:20.190Z] CLI Version:   3.16.0
+[debug] [2018-01-14T20:18:20.190Z] Platform:      darwin
+[debug] [2018-01-14T20:18:20.190Z] Node Version:  v8.7.0
+[debug] [2018-01-14T20:18:20.191Z] Time:          Sun Jan 14 2018 13:18:20 GMT-0700 (MST)
+[debug] [2018-01-14T20:18:20.191Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-01-14T20:18:20.207Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-14T20:18:20.207Z] > authorizing via signed-in user
+[debug] [2018-01-14T20:18:20.209Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-01-14T20:18:20.210Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/aXUsak60Cs1lstQjJcFTXASk3tLh1qyLKHApJ3SgyKI',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sun Jan 14 2018 13:18:20 GMT-0700 (MST)
+[debug] [2018-01-14T20:18:20.493Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-14T20:18:20.510Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/ben-casalino  
+  
+ Sun Jan 14 2018 13:18:20 GMT-0700 (MST)
+[debug] [2018-01-14T20:18:20.893Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-14T20:18:20.894Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/ben-casalino/tokens  
+  
+ Sun Jan 14 2018 13:18:20 GMT-0700 (MST)
+[debug] [2018-01-14T20:19:21.117Z] <<< HTTP RESPONSE 200
+[info] 
+[warn] ⚠  Your CLI authentication needs to be updated to take advantage of new features.
+[warn] ⚠  Please run firebase login --reauth
+[info] 
+[debug] [2018-01-14T20:19:21.127Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-01-14T20:19:21.129Z] > authorizing via signed-in user
+[debug] [2018-01-14T20:19:21.129Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-01-14T20:19:21.130Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/aXUsak60Cs1lstQjJcFTXASk3tLh1qyLKHApJ3SgyKI',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sun Jan 14 2018 13:19:21 GMT-0700 (MST)
+[debug] [2018-01-14T20:19:21.300Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-14T20:19:21.321Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/ben-casalino  
+  
+ Sun Jan 14 2018 13:19:21 GMT-0700 (MST)
+[debug] [2018-01-14T20:19:21.609Z] <<< HTTP RESPONSE 200
+[error] 
+[error] Error: Server Error: Unexpected Response. Please try again
+[debug] [2018-01-14T20:19:21.614Z] Error Context: {
+  "status": 200,
+  "response": {
+    "statusCode": 200,
+    "body": {
+      "error": {
+        "code": "SERVICE_UNAVAILABLE",
+        "message": "This service is currently unavailable. Please try again in a few moments."
+      }
+    },
+    "headers": {
+      "server": "nginx",
+      "date": "Sun, 14 Jan 2018 20:19:21 GMT",
+      "content-type": "application/json",
+      "content-length": "147",
+      "last-modified": "Wed, 18 May 2016 18:59:26 GMT",
+      "connection": "close",
+      "etag": "\"573cbb8e-93\"",
+      "access-control-allow-origin": "*",
+      "access-control-allow-methods": "GET, PUT, POST, DELETE, OPTIONS",
+      "access-control-allow-headers": "*",
+      "strict-transport-security": "max-age=31536000; includeSubdomains",
+      "cache-control": "no-cache, no-store",
+      "accept-ranges": "bytes"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "admin.firebase.com",
+        "port": 443,
+        "hostname": "admin.firebase.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1/projects/ben-casalino",
+        "path": "/v1/projects/ben-casalino",
+        "href": "https://admin.firebase.com/v1/projects/ben-casalino"
+      },
+      "method": "GET",
+      "headers": {
+        "User-Agent": "FirebaseCLI/3.16.0",
+        "X-Client-Version": "FirebaseCLI/3.16.0",
+        "authorization": "Bearer ya29.GmVCBa6dZeQuzOuOmYobe4Vk-4G0JBryZMUPFQuNf298EgYQTlWBjJQ78QDT7HQWNGX1U4TQZj8TLlTBHm_2Su8USwdwEvD_rmTWp_hHDP2p9KSQHwavG2YfOQyU0G2wXDUNy994fA",
+        "accept": "application/json"
+      }
+    }
+  },
+  "body": {
+    "error": {
+      "code": "SERVICE_UNAVAILABLE",
+      "message": "This service is currently unavailable. Please try again in a few moments."
+    }
+  }
+}
