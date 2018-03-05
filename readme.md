@@ -1,19 +1,20 @@
-# Welcome
+# BenCasalino Portfolio Website
 
-Hello, welcome to my portfolio website. Feel free to send any questions to the email listed on the contact page.
+### Author **Ben Csasalino**
+### Contact **BenCasalino@gmail.com**
 
-## Getting Started
-Enter bencasalino.com in the search bar of your preferred browser.
-
-### Prerequisites
-None, should work on most modern browsers.
-
-## Built With
-* HTML,CSS/SASS & Vanilla JavaScript :)
-
-## Authors
-* **Ben Casalino** - (github.com/bencasalino)
+This website containts all information pertaning to Ben Casalino. Use this app to view projects/details and contact.
 
 
-## License
-This project is licensed under the MIT License. 
+## Project Section
+* Displays all projects information and lins to host/github repos.
+
+## Contact Section
+* Displays all information needed to contact and what social media accounts that are associated.
+
+
+## App Layout
+![Layout of the Website](Layout.png)
+
+- Link to:[deployed front-end URL](https://bencasalino.com/)
+- Link to: [Code Frontend Repo](https://github.com/bencasalino/BenCasalino-Portfolio/)
