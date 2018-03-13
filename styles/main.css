@@ -1,5 +1,5 @@
 
-
+/* fallbacks  */
 body {
   color: #000000;
   background-color: #ffffff;
@@ -19,6 +19,7 @@ nav {
   box-shadow: 0 11px 24px 0 rgba(26, 26, 26, 0.5);
 }
 
+/* end fallbacks  */
 .logo {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
@@ -53,7 +54,7 @@ nav {
 }
 
 /* end header styles */
-
+/* start hero banner  */
 .hero-banner {
   background: url(../images/hero-waterfall-bg.png),
     url(../images/hero-space-bg.png), url(../images/hero-pillars-bg.png),
@@ -72,14 +73,12 @@ nav {
     background-position-y: -1200px, 1000px, 300px, 0px;
   }
 }
+/* end hero banner styles  */
 
 
-/* under hero image styles  */
-
-.foldline {
+/* bottom-wrapper */
+.wrapper-foldline {
   height: 30vh;
-  /* padding-top: 2rem; */
-  /* box-shadow : inset 0 0 10px #000000; */
   -webkit-box-shadow: inset 0 11px 24px 0 rgba(26, 26, 26, 0.5);
   -moz-box-shadow: inset 0 11px 24px 0 rgba(26, 26, 26, 0.5);
   box-shadow: inset 0 11px 24px 0 rgba(26, 26, 26, 0.5);
@@ -87,14 +86,22 @@ nav {
   justify-content: space-between;
 }
 
+
+
+/* bottom-left */
+
+.bottom-section-left {
+  padding-top: 10px;
+
+}
 .hello {
   padding: 2rem 0rem 0rem 1rem;
 }
-
-.hw {
+/* hello world text  */
+h1 {
   font-size: 3.5rem;
 }
-
+/* tagline text  */
 h2 {
   padding-top: 0.4rem;
   font-size: 1rem;
@@ -102,24 +109,7 @@ h2 {
   font-weight: 400;
 }
 
-
-h3 {
-  padding-top: 0.4rem;
-  font-size: 1.2rem;
-  font-family: "Lato", sans-serif;
-  line-height: 1.5rem;
-  display: inline-block;
-}
-
-h4 {
-  padding-top: 0.1rem;
-  padding-right: 1rem;
-  font-size: 1.2rem;
-  font-family: "Lato", sans-serif;
-  line-height: 2rem;
-  display: inline-block;
-}
-
+/* icons start */
 .sm {
   max-height: 25px;
   max-width: 25px;
@@ -129,92 +119,11 @@ h4 {
   display: inline-block;
   padding: 0.2rem;
 }
+/* icons end  */
 
-/* end hero image styles */
-
-.header-exp {
-  padding-top: 1rem;
-  justify-content: center;
-  height: 10vh;
-  width: 100vw;
-  align-content: center;
-  display: flex;
-  font-size: 2rem;
-}
-
-/*effect-underline fallbacks */
-
-a {
-  font-size: 1rem;
-  color: #584e4a;
-  position: relative;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding-bottom: 8px;
-}
-
-a:before,
-a:after {
-  content: "";
-  position: absolute;
-  bottom: 2px;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background-color: black;
-}
-
-a:before {
-  opacity: 0;
-  -webkit-transform: translateY(-8px);
-  -ms-transform: translateY(-8px);
-  transform: translateY(-8px);
-  -webkit-transition: -webkit-transform 0s
-      cubic-bezier(0.175, 0.885, 0.32, 1.275),
-    opacity 0s;
-  transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
-}
-
-a:after {
-  opacity: 0;
-  -webkit-transform: translateY(4px);
-  -ms-transform: translateY(4px);
-  transform: translateY(4px);
-  -webkit-transition: -webkit-transform 0.2s
-      cubic-bezier(0.175, 0.885, 0.32, 1.275),
-    opacity 0.2s;
-  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
-    opacity 0.2s;
-}
-
-a:hover:before,
-a:hover:after,
-a:focus:before,
-a:focus:after {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-  -ms-transform: translateY(0);
-  transform: translateY(0);
-}
-
-a:hover:before,
-a:focus:before {
-  -webkit-transition: -webkit-transform 0.2s
-      cubic-bezier(0.175, 0.885, 0.32, 1.275),
-      opacity 0.2s;
-  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
-    opacity 0.2s;
-}
-
-a:hover:after,
-a:focus:after {
-  -webkit-transition: -webkit-transform 0s 0.2s
-      cubic-bezier(0.175, 0.885, 0.32, 1.275),
-    opacity 0s 0.2s;
-  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
-    opacity 0s 0.2s;
-}
-/* end all hover fx styles */
+/* end bottom left  */
+/* bottom right  */
+/* end bottom right */
 
 .wrapper-row-icons {
   display: flex;
@@ -231,11 +140,6 @@ a:focus:after {
 }
 
 .grid {
-  /* display: grid;
-          grid-template-columns: 1fr 1fr 1fr 1fr;
-          grid-template-rows: 100px 100px;
-          grid-gap: 20px; */
-  /* align-items: center; */
   display: flex;
   padding-top: 6rem;
   justify-content: space-around;
@@ -246,6 +150,8 @@ a:focus:after {
   justify-content: space-between;
 }
 
+
+/* project item styles  */
 .item {
   max-width: 250px;
   max-height: 250px;
@@ -263,5 +169,73 @@ a:focus:after {
   box-shadow: 0 11px 24px 0 rgba(26, 26, 26, 0.5);
   /* transition-timing-function: ease-in-out; */
 }
+/* end project item styles  */
 
+
+/* --------------------------------- effect-underline fallbacks */
+a {
+  font-size: 1rem;
+  color: #584e4a;
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-bottom: 8px;
+}
+a:before,
+a:after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: black;
+}
+a:before {
+  opacity: 0;
+  -webkit-transform: translateY(-8px);
+  -ms-transform: translateY(-8px);
+  transform: translateY(-8px);
+  -webkit-transition: -webkit-transform 0s
+      cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0s;
+  transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+}
+a:after {
+  opacity: 0;
+  -webkit-transform: translateY(4px);
+  -ms-transform: translateY(4px);
+  transform: translateY(4px);
+  -webkit-transition: -webkit-transform 0.2s
+      cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0.2s;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0.2s;
+}
+a:hover:before,
+a:hover:after,
+a:focus:before,
+a:focus:after {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+a:hover:before,
+a:focus:before {
+  -webkit-transition: -webkit-transform 0.2s
+      cubic-bezier(0.175, 0.885, 0.32, 1.275),
+      opacity 0.2s;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0.2s;
+}
+a:hover:after,
+a:focus:after {
+  -webkit-transition: -webkit-transform 0s 0.2s
+      cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0s 0.2s;
+  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0s 0.2s;
+}
+/* ------------------------------------ end all hover fx styles */
 
