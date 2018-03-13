@@ -1,7 +1,7 @@
 /* begin hero block */
 
 .test {
-  background: url(../images/z-waterfall1.png), url(../images/z-space2.png), url(../images/z-pillar.png), url(../images/z1.png);
+  background: url(../images/hero-waterfall-bg.png), url(../images/hero-space-bg.png), url(../images/hero-pillars-bg.png), url(../images/hero-main-bg.png);
   height: 70vh;
   width: 100vw;
   /* Create the parallax scrolling effect */
@@ -22,7 +22,7 @@
 }
 
 .test-rev {
-  background: url(../images/z-waterfall1.png), url(../images/z-space2.png), url(../images/z-pillar.png), url(../images/z1.png);
+  background: url(../images/hero-waterfall-bg.png), url(../images/hero-space-bg.png), url(../images/hero-pillars-bg.png), url(../images/hero-main-bg.png);
   height: 70vh;
   width: 100vw;
   /* Create the parallax scrolling effect */
@@ -179,7 +179,7 @@ h4 {
   align-content: center;
   display: flex;
   font-size: 2rem;
-  
+
 }
 
 /*effect-underline fallbacks */
