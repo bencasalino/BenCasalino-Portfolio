@@ -1,7 +1,9 @@
 /* begin hero block */
 
 .test {
-  background: url(../images/hero-waterfall-bg.png), url(../images/hero-space-bg.png), url(../images/hero-pillars-bg.png), url(../images/hero-main-bg.png);
+  background: url(../images/hero-waterfall-bg.png),
+    url(../images/hero-space-bg.png), url(../images/hero-pillars-bg.png),
+    url(../images/hero-main-bg.png);
   height: 70vh;
   width: 100vw;
   /* Create the parallax scrolling effect */
@@ -16,13 +18,14 @@
 
 @keyframes parallax_bg {
   100% {
-    background-position-y: /* 1800px, */
-    -1200px, 1000px, 300px, 0px;
+    background-position-y: /* 1800px, */ -1200px, 1000px, 300px, 0px;
   }
 }
 
 .test-rev {
-  background: url(../images/hero-waterfall-bg.png), url(../images/hero-space-bg.png), url(../images/hero-pillars-bg.png), url(../images/hero-main-bg.png);
+  background: url(../images/hero-waterfall-bg.png),
+    url(../images/hero-space-bg.png), url(../images/hero-pillars-bg.png),
+    url(../images/hero-main-bg.png);
   height: 70vh;
   width: 100vw;
   /* Create the parallax scrolling effect */
@@ -37,8 +40,7 @@
 
 @keyframes parallax_bg_rev {
   100% {
-    background-position-y: /* 1800px, */
-    1200px, -1000px, -300px, 0px;
+    background-position-y: /* 1800px, */ 1200px, -1000px, -300px, 0px;
   }
 }
 
@@ -49,7 +51,7 @@
 body {
   color: #000000;
   background-color: #ffffff;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 /* end fallbacks */
@@ -89,7 +91,7 @@ nav {
 }
 
 .header-right a {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #000000;
 }
 
@@ -103,7 +105,6 @@ nav {
 }
 
 /* end header styles */
-
 
 /* under hero image styles  */
 
@@ -127,33 +128,33 @@ nav {
 }
 
 h2 {
-  padding-top: .4rem;
+  padding-top: 0.4rem;
   font-size: 1rem;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 900;
 }
 
 .bio {
   padding: 3rem 2rem 0rem 0rem;
   /* display: inline-block; */
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   flex-direction: column;
   display: flex;
 }
 
 h3 {
-  padding-top: .4rem;
+  padding-top: 0.4rem;
   font-size: 1.2rem;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   line-height: 1.5rem;
   display: inline-block;
 }
 
 h4 {
-  padding-top: .1rem;
+  padding-top: 0.1rem;
   padding-right: 1rem;
   font-size: 1.2rem;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   line-height: 2rem;
   display: inline-block;
 }
@@ -165,9 +166,8 @@ h4 {
 
 .sm-icons {
   display: inline-block;
-  padding: .2rem;
+  padding: 0.2rem;
 }
-
 
 /* end hero image styles */
 
@@ -179,22 +179,22 @@ h4 {
   align-content: center;
   display: flex;
   font-size: 2rem;
-
 }
 
 /*effect-underline fallbacks */
 
 a {
   font-size: 1rem;
-  color: #584E4A;
+  color: #584e4a;
   position: relative;
   text-transform: uppercase;
   text-decoration: none;
   padding-bottom: 8px;
 }
 
-a:before, a:after {
-  content: '';
+a:before,
+a:after {
+  content: "";
   position: absolute;
   bottom: 2px;
   left: 0;
@@ -208,7 +208,9 @@ a:before {
   -webkit-transform: translateY(-8px);
   -ms-transform: translateY(-8px);
   transform: translateY(-8px);
-  -webkit-transition: -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+  -webkit-transition: -webkit-transform 0s
+      cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0s;
   transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
 }
 
@@ -217,32 +219,50 @@ a:after {
   -webkit-transform: translateY(4px);
   -ms-transform: translateY(4px);
   transform: translateY(4px);
-  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
-  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+  -webkit-transition: -webkit-transform 0.2s
+      cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0.2s;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0.2s;
 }
 
-a:hover:before, a:hover:after, a:focus:before, a:focus:after {
+a:hover:before,
+a:hover:after,
+a:focus:before,
+a:focus:after {
   opacity: 1;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0);
 }
 
-a:hover:before, a:focus:before {
-  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
-  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+a:hover:before,
+a:focus:before {
+  -webkit-transition: -webkit-transform 0.2s
+      cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0.2s;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0.2s;
 }
 
-a:hover:after, a:focus:after {
-  -webkit-transition: -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s;
-  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s;
+a:hover:after,
+a:focus:after {
+  -webkit-transition: -webkit-transform 0s 0.2s
+      cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0s 0.2s;
+  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0s 0.2s;
 }
 /* end all hover fx styles */
-
 
 .rowcons {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   line-height: 2rem;
+}
+
+.resume {
+  color: black;
+  font-size: 1.2rem;
 }
