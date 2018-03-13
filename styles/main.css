@@ -1,59 +1,10 @@
-/* begin hero block */
 
-.hero {
-  background: url(../images/hero-waterfall-bg.png),
-    url(../images/hero-space-bg.png), url(../images/hero-pillars-bg.png),
-    url(../images/hero-main-bg.png);
-  height: 70vh;
-  width: 100vw;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  /* background-repeat: repeat-y; */
-  background-size: cover;
-  /* background-position: 0 100%; */
-  z-index: -99999;
-  animation: parallax_bg linear 40s infinite;
-}
-
-@keyframes parallax_bg {
-  100% {
-    background-position-y: /* 1800px, */ -1200px, 1000px, 300px, 0px;
-  }
-}
-
-/* .hero-rev {
-  background: url(../images/hero-waterfall-bg.png),
-    url(../images/hero-space-bg.png), url(../images/hero-pillars-bg.png),
-    url(../images/hero-main-bg.png);
-  height: 70vh;
-  width: 100vw;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  z-index: -99999;
-  animation: parallax_bg_rev linear 40s infinite;
-} */
-/*
-@keyframes parallax_bg_rev {
-  100% {
-    background-position-y: 1200px, -1000px, -300px, 0px;
-  }
-} */
-
-/* end hero block  */
-
-/* begin fallbacks */
 
 body {
   color: #000000;
   background-color: #ffffff;
   font-family: "Lato", sans-serif;
 }
-
-/* end fallbacks */
-
-/* begin nav styles */
 
 nav {
   position: fixed;
@@ -103,9 +54,29 @@ nav {
 
 /* end header styles */
 
+.hero-banner {
+  background: url(../images/hero-waterfall-bg.png),
+    url(../images/hero-space-bg.png), url(../images/hero-pillars-bg.png),
+    url(../images/hero-main-bg.png);
+  height: 70vh;
+  width: 100vw;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  z-index: -99999;
+  animation: parallax_bg linear 40s infinite;
+}
+
+@keyframes parallax_bg {
+  100% {
+    background-position-y: -1200px, 1000px, 300px, 0px;
+  }
+}
+
+
 /* under hero image styles  */
 
-.fold {
+.foldline {
   height: 30vh;
   /* padding-top: 2rem; */
   /* box-shadow : inset 0 0 10px #000000; */
@@ -117,7 +88,7 @@ nav {
 }
 
 .hello {
-  padding: 3rem 0rem 0rem 1rem;
+  padding: 2rem 0rem 0rem 1rem;
 }
 
 .hw {
@@ -131,13 +102,6 @@ h2 {
   font-weight: 400;
 }
 
-.wrapper-section {
-  padding: 3rem 2rem 0rem 0rem;
-  /* display: inline-block; */
-  font-family: "Lato", sans-serif;
-  flex-direction: column;
-  display: flex;
-}
 
 h3 {
   padding-top: 0.4rem;
@@ -255,11 +219,49 @@ a:focus:after {
 .wrapper-row-icons {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  line-height: 2rem;
+  justify-content: flex-start;
+  padding-right: 20px;
+    padding-top: 10px;
+  line-height: 1rem;
 }
 
 .resume {
   color: black;
   font-size: 1.2rem;
 }
+
+.grid {
+  /* display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-template-rows: 100px 100px;
+          grid-gap: 20px; */
+  /* align-items: center; */
+  display: flex;
+  padding-top: 6rem;
+  justify-content: space-around;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.item:hover {
+  /* opacity: .6; */
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-box-shadow: 0 11px 24px 0 rgba(26, 26, 26, 0.5);
+  -moz-box-shadow: 0 11px 24px 0 rgba(26, 26, 26, 0.5);
+  box-shadow: 0 11px 24px 0 rgba(26, 26, 26, 0.5);
+  /* transition-timing-function: ease-in-out; */
+}
+
+
