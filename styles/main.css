@@ -84,15 +84,18 @@ nav {
   box-shadow: inset 0 11px 24px 0 rgba(26, 26, 26, 0.5);
   display: flex;
   justify-content: space-between;
+  /* padding: 0rem 2rem 1rem 2rem; */
 }
 
 
-
 /* bottom-left */
+.bottom-section-left{
+padding-left:1rem;
+padding-top:.5rem;
+}
 
-.bottom-section-left {
-  padding-top: 10px;
-
+.bottom-section-right {
+padding-top:1rem;
 }
 .hello {
   padding: 2rem 0rem 0rem 1rem;
@@ -107,6 +110,12 @@ h2 {
   font-size: 1rem;
   font-family: "Lato", sans-serif;
   font-weight: 400;
+}
+
+h3  {
+    font-size: .9rem;
+    padding-bottom: 10px;
+      font-weight: 400;
 }
 
 /* icons start */
@@ -153,8 +162,8 @@ h2 {
 
 /* project item styles  */
 .item {
-  max-width: 250px;
-  max-height: 250px;
+  max-width: 50px;
+  max-height: 50px;
 }
 
 .item:hover {
@@ -239,3 +248,7 @@ a:focus:after {
 }
 /* ------------------------------------ end all hover fx styles */
 
+.pipe {
+  padding-top: 10px;
+  font-weight: 900;
+}
