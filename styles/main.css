@@ -1,6 +1,6 @@
 /* begin hero block */
 
-.test {
+.hero {
   background: url(../images/hero-waterfall-bg.png),
     url(../images/hero-space-bg.png), url(../images/hero-pillars-bg.png),
     url(../images/hero-main-bg.png);
@@ -22,27 +22,24 @@
   }
 }
 
-.test-rev {
+/* .hero-rev {
   background: url(../images/hero-waterfall-bg.png),
     url(../images/hero-space-bg.png), url(../images/hero-pillars-bg.png),
     url(../images/hero-main-bg.png);
   height: 70vh;
   width: 100vw;
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
-  /* background-repeat: repeat-y; */
   background-size: cover;
-  /* background-position: 0 100%; */
   z-index: -99999;
   animation: parallax_bg_rev linear 40s infinite;
-}
-
+} */
+/*
 @keyframes parallax_bg_rev {
   100% {
-    background-position-y: /* 1800px, */ 1200px, -1000px, -300px, 0px;
+    background-position-y: 1200px, -1000px, -300px, 0px;
   }
-}
+} */
 
 /* end hero block  */
 
@@ -131,10 +128,10 @@ h2 {
   padding-top: 0.4rem;
   font-size: 1rem;
   font-family: "Lato", sans-serif;
-  font-weight: 900;
+  font-weight: 400;
 }
 
-.bio {
+.wrapper-section {
   padding: 3rem 2rem 0rem 0rem;
   /* display: inline-block; */
   font-family: "Lato", sans-serif;
@@ -240,7 +237,7 @@ a:hover:before,
 a:focus:before {
   -webkit-transition: -webkit-transform 0.2s
       cubic-bezier(0.175, 0.885, 0.32, 1.275),
-    opacity 0.2s;
+      opacity 0.2s;
   transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
     opacity 0.2s;
 }
@@ -255,7 +252,7 @@ a:focus:after {
 }
 /* end all hover fx styles */
 
-.rowcons {
+.wrapper-row-icons {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
