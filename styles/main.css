@@ -240,6 +240,14 @@ a:focus:after {
   transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
     opacity 0s 0.2s;
 }
+
+.remove-hover:before {
+display: none;
+}
+
+.remove-hover:after {
+display: none;
+}
 /* end all hover fx styles --------------------- */
 /* end all css styles -------------------------- */
 
