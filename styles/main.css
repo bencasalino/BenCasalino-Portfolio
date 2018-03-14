@@ -295,7 +295,7 @@ display: none;
     a:after {
     background-color: white;
     }
-    .item {
+    /* .item {
     display: none;
-    }
+    } */
 }
