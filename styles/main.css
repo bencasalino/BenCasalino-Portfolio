@@ -11,7 +11,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10vh;
+  height: 8vh;
   width: 100vw;
   background-color: #ffffff;
   -webkit-box-shadow: 0 11px 24px 0 rgba(26, 26, 26, 0.5);
@@ -100,7 +100,7 @@ padding-top:.5rem;
 }
 /* bottom-section-right-------------------- */
 .bottom-section-right {
-padding-top:1rem;
+padding-top:.7rem;
 padding-right:2rem;
 
 }
@@ -253,13 +253,10 @@ a:focus:after {
     hr {
     display: none;
     }
-    .bottom-section-left {
-    /* display: flex;
-    justify-content: center; */
-    }
     a:before,
     a:after {
     background-color: white;
+    color:black;
     }
     .item {
     display: none;
@@ -267,6 +264,7 @@ a:focus:after {
 
     h3 {
       padding-top:10px;
+      color:black;
     }
 }
 

@@ -11,7 +11,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10vh;
+  height: 8vh;
   width: 100vw;
   background-color: #ffffff;
   -webkit-box-shadow: 0 11px 24px 0 rgba(26, 26, 26, 0.5);
