@@ -1,11 +1,11 @@
-
-/* fallbacks  */
+/* fallbacks -----------------------------------  */
 body {
   color: #000000;
   background-color: #ffffff;
   font-family: "Lato", sans-serif;
 }
-
+/* end fallbacks ------------------------------- */
+/* start header styles ------------------------ */
 nav {
   position: fixed;
   display: flex;
@@ -19,42 +19,45 @@ nav {
   box-shadow: 0 11px 24px 0 rgba(26, 26, 26, 0.5);
 }
 
-/* end fallbacks  */
-.logo {
+.header-logo {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
-.header-left {
+.header-left-wrapper {
   padding-left: 1rem;
 }
 
-.header-left .header-name {
+.header-left-wrapper .header-name {
   font-size: 1.7rem;
   font-weight: 900;
   color: #000000;
 }
 
-.header-right {
+.header-right-wrapper {
   padding-right: 1rem;
   color: #000000;
 }
 
-.header-right a {
+.header-right-wrapper a {
   font-family: "Lato", sans-serif;
   color: #000000;
 }
 
-.nav-cta {
+.nav-cta-links {
   padding: 0.8rem;
 }
 
-.nav-cta:hover {
+.nav-cta-links:hover {
   padding: 0.8rem;
   color: gray;
 }
 
-/* end header styles */
-/* start hero banner  */
+.pipe-styles {
+  padding-top: 10px;
+  font-weight: 900;
+}
+/* end header styles -------------------------- */
+/* start hero banner -------------------------- */
 .hero-banner {
   background: url(../images/hero-waterfall-bg.png),
     url(../images/hero-space-bg.png), url(../images/hero-pillars-bg.png),
@@ -73,10 +76,9 @@ nav {
     background-position-y: -1200px, 1000px, 300px, 0px;
   }
 }
-/* end hero banner styles  */
+/* end hero banner styles ----------------------  */
 
-
-/* bottom-wrapper */
+/* bottom-wrapper  ------------------------------ */
 .wrapper-foldline {
   height: 30vh;
   -webkit-box-shadow: inset 0 11px 24px 0 rgba(26, 26, 26, 0.5);
@@ -84,16 +86,15 @@ nav {
   box-shadow: inset 0 11px 24px 0 rgba(26, 26, 26, 0.5);
   display: flex;
   justify-content: space-between;
-  /* padding: 0rem 2rem 1rem 2rem; */
 }
 
 
-/* bottom-left */
+/* bottom-section-left-------------------- */
 .bottom-section-left{
 padding-left:1rem;
 padding-top:.5rem;
 }
-
+/* bottom-section-right-------------------- */
 .bottom-section-right {
 padding-top:1rem;
 padding-right:2rem;
@@ -102,6 +103,7 @@ padding-right:2rem;
 .hello {
   padding: 2rem 0rem 0rem 1rem;
 }
+
 /* hello world text  */
 h1 {
   font-size: 3.5rem;
@@ -120,21 +122,7 @@ h3  {
       font-weight: 400;
 }
 
-/* icons start */
-.sm {
-  max-height: 25px;
-  max-width: 25px;
-}
-
-.sm-icons {
-  display: inline-block;
-  padding: 0.2rem;
-}
-/* icons end  */
-
-/* end bottom left  */
-/* bottom right  */
-/* end bottom right */
+/* icons start ------------------------------- */
 
 .wrapper-row-icons {
   display: flex;
@@ -145,31 +133,33 @@ h3  {
   line-height: 1rem;
 }
 
+.sm {
+  max-height: 25px;
+  max-width: 25px;
+}
+
+.sm-icons {
+  display: inline-block;
+  padding: 0.2rem;
+}
+
 .resume {
   color: black;
   font-size: 1.2rem;
 }
 
-.grid {
-  display: flex;
-  padding-top: 6rem;
-  justify-content: space-around;
-}
-
+/* icons end --------------------------------  */
 .flex {
   display: flex;
   justify-content: space-between;
 }
-
-
-/* project item styles  */
+/* project item styles --------------------  */
 .item {
   max-width: 50px;
   max-height: 50px;
 }
 
 .item:hover {
-  /* opacity: .6; */
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -o-filter: grayscale(100%);
@@ -178,12 +168,10 @@ h3  {
   -webkit-box-shadow: 0 11px 24px 0 rgba(26, 26, 26, 0.5);
   -moz-box-shadow: 0 11px 24px 0 rgba(26, 26, 26, 0.5);
   box-shadow: 0 11px 24px 0 rgba(26, 26, 26, 0.5);
-  /* transition-timing-function: ease-in-out; */
 }
-/* end project item styles  */
+/* end project item styles ------------------  */
 
-
-/* --------------------------------- effect-underline fallbacks */
+/*  effect-underline fallbacks ---------------  */
 a {
   font-size: 1rem;
   color: #584e4a;
@@ -248,9 +236,5 @@ a:focus:after {
   transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
     opacity 0s 0.2s;
 }
-/* ------------------------------------ end all hover fx styles */
-
-.pipe {
-  padding-top: 10px;
-  font-weight: 900;
-}
+/* end all hover fx styles --------------------- */
+/* end all css styles -------------------------- */
