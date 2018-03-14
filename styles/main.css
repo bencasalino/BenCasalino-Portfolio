@@ -52,6 +52,10 @@ nav {
   color: gray;
 }
 
+.pipe-header {
+  padding-top: 10px;
+  font-weight: 900;
+}
 .pipe-styles {
   padding-top: 10px;
   font-weight: 900;
@@ -238,3 +242,25 @@ a:focus:after {
 }
 /* end all hover fx styles --------------------- */
 /* end all css styles -------------------------- */
+
+
+/* start media queries --------------------------  */
+
+@media only screen and (max-width: 400px) {
+    .nav-cta-links, .pipe-header, h2 {
+        display: none;
+    }
+        hr, h3 {
+        display: none;
+    }
+    .bottom-section-left {
+      display: flex;
+      justify-content: center;
+    }
+        .bottom-section-right {
+        display: none;
+    }
+}
+
+
+/* start media queries --------------------------  */
