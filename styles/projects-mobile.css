@@ -82,81 +82,7 @@ nav {
 }
 /* end hero banner styles ----------------------  */
 
-/* bottom-wrapper  ------------------------------ */
-.wrapper-foldline {
-  height: 30vh;
-  -webkit-box-shadow: inset 0 11px 24px 0 rgba(26, 26, 26, 0.5);
-  -moz-box-shadow: inset 0 11px 24px 0 rgba(26, 26, 26, 0.5);
-  box-shadow: inset 0 11px 24px 0 rgba(26, 26, 26, 0.5);
-  display: flex;
-  justify-content: space-between;
-}
 
-
-/* bottom-section-left-------------------- */
-.bottom-section-left{
-padding-left:1rem;
-padding-top:.5rem;
-}
-/* bottom-section-right-------------------- */
-.bottom-section-right {
-padding-top:1rem;
-padding-right:2rem;
-
-}
-.hello {
-  padding: 2rem 0rem 0rem 1rem;
-}
-
-/* hello world text  */
-h1 {
-  font-size: 3.5rem;
-}
-/* tagline text  */
-h2 {
-  padding-top: 0.4rem;
-  font-size: 1rem;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-}
-
-h3  {
-    font-size: 1.3rem;
-    padding-bottom: 10px;
-      font-weight: 400;
-}
-
-/* icons start ------------------------------- */
-
-.wrapper-row-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  padding-right: 20px;
-    padding-top: 10px;
-  line-height: 1rem;
-}
-
-.sm {
-  max-height: 25px;
-  max-width: 25px;
-}
-
-.sm-icons {
-  display: inline-block;
-  padding: 0.2rem;
-}
-
-.resume {
-  color: black;
-  font-size: 1.2rem;
-}
-
-/* icons end --------------------------------  */
-.flex {
-  display: flex;
-  justify-content: space-between;
-}
 /* project item styles --------------------  */
 .item {
   max-width: 50px;
@@ -246,48 +172,36 @@ a:focus:after {
 
 /* mobile media queries --------------------------  */
 
+@media only screen and (min-width: 700px) {
+body {
+  display: none;
+}
+}
+
 @media only screen and (max-width: 400px) {
-    .nav-cta-links, .pipe-header, h2 {
-    display: none;
-    }
-    hr {
-    display: none;
-    }
-    .bottom-section-left {
-    /* display: flex;
-    justify-content: center; */
-    }
-    a:before,
-    a:after {
-    background-color: white;
-    }
-    .item {
-    display: none;
-    }
+h4 {
+  padding-top: 6rem;
+    padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
 
-    h3 {
-      padding-top:10px;
-    }
+.projects-container {
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  padding: 2px;
+    max-width: 80px;
+  max-height: 80px;
+}
+
+nav {
+ z-index: 999999;
+}
 }
 
 
-/* pads media queries --------------------------  */
-
-@media only screen and (max-width: 1140px) {
-    .nav-cta-links, .pipe-header, h2 {
-    display: none;
-    }
-    hr{
-    display: none;
-    }
-    .bottom-section-left {
-    display: block;
-    }
-    a:before,
-    a:after {
-    background-color: white;
-    }
-    .item {
-    display: none;
-    }
-}
