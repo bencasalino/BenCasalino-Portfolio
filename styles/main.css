@@ -281,30 +281,8 @@ display: none;
 
 /* pads media queries --------------------------  */
 
-@media only screen and (max-width: 1140px) {
-    .nav-cta-links, .pipe-header, h2 {
-    display: none;
-    }
-    hr{
-    display: none;
-    }
-    .bottom-section-left {
-    display: block;
-    }
-    a:before,
-    a:after {
-    background-color: white;
-    }
-    h3 {
-            padding-top:10px;
-      color:black;
 
-    }
-    .item {
-  max-width: 40px;
-  max-height: 40px;
-    }
-}
+
 
 /* @media only screen and (max-width: 1000px) {
 
