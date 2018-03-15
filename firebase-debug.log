@@ -1,0 +1,61 @@
+[debug] [2018-03-15T01:55:22.156Z] ----------------------------------------------------------------------
+[debug] [2018-03-15T01:55:22.158Z] Command:       /usr/local/Cellar/node/9.4.0/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-03-15T01:55:22.158Z] CLI Version:   3.17.6
+[debug] [2018-03-15T01:55:22.158Z] Platform:      darwin
+[debug] [2018-03-15T01:55:22.159Z] Node Version:  v9.4.0
+[debug] [2018-03-15T01:55:22.159Z] Time:          Wed Mar 14 2018 19:55:22 GMT-0600 (MDT)
+[debug] [2018-03-15T01:55:22.159Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-15T01:55:22.178Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-15T01:55:22.178Z] > authorizing via signed-in user
+[debug] [2018-03-15T01:55:22.180Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-15T01:55:22.180Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/aXUsak60Cs1lstQjJcFTXASk3tLh1qyLKHApJ3SgyKI',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Wed Mar 14 2018 19:55:22 GMT-0600 (MDT)
+[debug] [2018-03-15T01:55:22.388Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-15T01:55:22.406Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/ben-casalino  
+  
+ Wed Mar 14 2018 19:55:22 GMT-0600 (MDT)
+[debug] [2018-03-15T01:55:22.875Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-15T01:55:22.876Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/ben-casalino/tokens  
+  
+ Wed Mar 14 2018 19:55:22 GMT-0600 (MDT)
+[debug] [2018-03-15T01:55:23.328Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'ben-casalino'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing . directory for upload...
+[debug] [2018-03-15T01:55:29.161Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/ben-casalino/uploads/-L7bMb2uQZdj66srZ36W?fileCount=670&message=  
+  
+ Wed Mar 14 2018 19:55:29 GMT-0600 (MDT)
+[debug] [2018-03-15T01:57:13.687Z] ----------------------------------------------------------------------
+[debug] [2018-03-15T01:57:13.690Z] Command:       /usr/local/Cellar/node/9.4.0/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-03-15T01:57:13.690Z] CLI Version:   3.17.6
+[debug] [2018-03-15T01:57:13.690Z] Platform:      darwin
+[debug] [2018-03-15T01:57:13.690Z] Node Version:  v9.4.0
+[debug] [2018-03-15T01:57:13.691Z] Time:          Wed Mar 14 2018 19:57:13 GMT-0600 (MDT)
+[debug] [2018-03-15T01:57:13.691Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-15T01:57:13.709Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-15T01:57:13.709Z] > authorizing via signed-in user
+[debug] [2018-03-15T01:57:13.711Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/ben-casalino  
+  
+ Wed Mar 14 2018 19:57:13 GMT-0600 (MDT)
+[debug] [2018-03-15T01:57:14.074Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-15T01:57:14.075Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/ben-casalino/tokens  
+  
+ Wed Mar 14 2018 19:57:14 GMT-0600 (MDT)
+[debug] [2018-03-15T01:57:14.500Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'ben-casalino'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing . directory for upload...
+[debug] [2018-03-15T01:57:21.206Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/ben-casalino/uploads/-L7bN1Da7zTc8mQZe8cF?fileCount=670&message=  
+  
+ Wed Mar 14 2018 19:57:21 GMT-0600 (MDT)
